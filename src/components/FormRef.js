@@ -19,7 +19,7 @@ const FormRef = () => {
      <input id='email'  placeholder='Email' type='email' required /><br/>
      <input id='password'  placeholder='Password' type='password' required /><br/>
      <input id='password_confirmation'  placeholder='Confirm Password' type='password' required /><br/>
-     <button onClick={submit}>Submit</button>
+     <button>Submit</button>
     </form>
        {/* <Card submit={submit}  />  */}
        <div>{submitbyuseRef.current}</div>
