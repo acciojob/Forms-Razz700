@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef,useState } from 'react'
 import Card from './Card'
 
 const FormRef = () => {
@@ -7,11 +7,16 @@ const FormRef = () => {
       console.log('hi');
       submitbyuseRef.current='form submitted';
       console.log(submitbyuseRef);
+      setval('');
     }
+    const [val,setval]=useState('');
+const settt=(e)=>{
+    const j=e.target.value;
+    setval(j);
+}
   return (
     <div>
-         <input id='full_name' type='text' placeholder='Full Name' required /><br/>
-        <Card submit={submit} />
+        <Card submit={submit} settt={settt} val={val} />
     </div>
   )
 }
