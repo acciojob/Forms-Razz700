@@ -12,8 +12,8 @@ const FormRef = () => {
    const [val,setval]=useState(false);
   return (
     <div>
+        {val &&  <input id='full_name'/>}
         <Card submit={submit}  />
-      {val &&  <p id='full_name'>I am full name</p>}
     </div>
   )
 }
