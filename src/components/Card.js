@@ -8,7 +8,7 @@ const Card = (props) => {
      <input id='email'  placeholder='Email' type='email' required /><br/>
      <input id='password'  placeholder='Password' type='password' required /><br/>
      <input id='password_confirmation'  placeholder='Confirm Password' type='password' required /><br/>
-     <button onSubmit={props.submit} type='submit'>Submit</button>
+     <button onClick={props.submit}>Submit</button>
     </form>
 </div>
   )
