@@ -13,7 +13,7 @@ const FormRef = () => {
   const [val,setval]=useState(false);
   return (
     <div>
-        {val && <div><Card/></div>}
+        {/* {val && <div><Card/></div>} */}
         <form id='info-form'>
      <input id='full_name' type='text' placeholder='Full Name' required /><br/>
      <input id='email'  placeholder='Email' type='email' required /><br/>
