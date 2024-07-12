@@ -12,7 +12,6 @@ const App = () => {
       <Link to='/form' id='form-link' >section 1</Link><br/>
       <Link to='/form-ref' id='form-ref-link' >section 2</Link><br/>
       <Link to='/form-state' id='form-state-link' >section 3</Link><br/>
-      <input type='text' id='full_name'/>
          <Routes>
             <Route path='/form' element={<Form />} />
             <Route path='/form-ref' element={ <FormRef />} />
