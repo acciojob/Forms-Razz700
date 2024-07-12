@@ -9,14 +9,14 @@ import FormState from './FormState'
 const App = () => {
   return (
     <div>
-      <Link to='/section1' id='form-link' >section 1</Link><br/>
-      <Link to='/section2' id='form-ref-link' >section 2</Link><br/>
-      <Link to='/section3' id='form-state-link' >section 3</Link><br/>
+      <Link to='/form' id='form-link' >section 1</Link><br/>
+      <Link to='/form-ref' id='form-ref-link' >section 2</Link><br/>
+      <Link to='/form-state' id='form-state-link' >section 3</Link><br/>
       
          <Routes>
-            <Route path='/section1' element={<Form />} />
-            <Route path='/section2' element={ <FormRef />} />
-            <Route path='/section3' element={ <FormState />} />
+            <Route path='/form' element={<Form />} />
+            <Route path='/form-ref' element={ <FormRef />} />
+            <Route path='/form-state' element={ <FormState />} />
          </Routes>
     </div>
   )
