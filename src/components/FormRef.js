@@ -10,6 +10,7 @@ const FormRef = () => {
     }
   return (
     <div>
+         <input id='full_name' type='text' placeholder='Full Name' required /><br/>
         <Card submit={submit} />
     </div>
   )
