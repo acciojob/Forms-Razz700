@@ -8,12 +8,12 @@ const FormRef = () => {
       console.log('hi');
       submitbyuseRef.current='form submitted';
       console.log(submitbyuseRef);
-      setval(true)
+    //  setval(true)
     }
-   const [val,setval]=useState(false);
+ //  const [val,setval]=useState(false);
   return (
     <div>
-        {val && <div id='full_name'><Card /></div>}
+        {/* {val && <div id='full_name'><Card /></div>} */}
         <Card submit={submit}  />
     </div>
   )
