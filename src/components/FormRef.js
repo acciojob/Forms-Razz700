@@ -7,16 +7,13 @@ const FormRef = () => {
       console.log('hi');
       submitbyuseRef.current='form submitted';
       console.log(submitbyuseRef);
-      setval('');
+      setval(true)
     }
-    const [val,setval]=useState('');
-const settt=(e)=>{
-    const j=e.target.value;
-    setval(j);
-}
+   const [val,setval]=useState(false);
   return (
     <div>
-        <Card submit={submit} settt={settt} val={val} />
+        <Card submit={submit}  />
+      {val &&  <p id='full_name'>I am full name</p>}
     </div>
   )
 }
